@@ -20,6 +20,7 @@ import (
 	"errors"
 	"net"
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/peter-gibbs/lite-idp/model"
@@ -65,7 +66,7 @@ func (i *IDP) makeAuthnResponse(request *model.AuthnRequest, user *model.User) *
 	resp := i.makeResponse(request.ID, request.Issuer, user)
 	// Add subject confirmation data and authentication statement
 	// peter.gibbs DNSName must not include a port number (pysaml2)
-	dnsName = i.serverName
+	dnsName := i.serverName
 	if i := strings.Index(dnsName, ":"); i != -1 {
 		dnsName = dnsName[:i]
 	}
