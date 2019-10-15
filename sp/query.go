@@ -10,7 +10,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/amdonov/lite-idp/saml"
+	"github.com/peter-gibbs/lite-idp/saml"
 )
 
 func (sp *serviceProvider) Query(nameID string) (*saml.Assertion, error) {

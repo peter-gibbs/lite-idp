@@ -20,8 +20,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/amdonov/lite-idp/model"
-	"github.com/amdonov/lite-idp/saml"
+	"github.com/peter-gibbs/lite-idp/model"
+	"github.com/peter-gibbs/lite-idp/saml"
 	"github.com/golang/protobuf/proto"
 	log "github.com/sirupsen/logrus"
 )

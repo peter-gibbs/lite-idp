@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/amdonov/lite-idp/idp"
+	"github.com/peter-gibbs/lite-idp/idp"
 	"github.com/spf13/viper"
 )
 

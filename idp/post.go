@@ -22,7 +22,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/amdonov/lite-idp/model"
+	"github.com/peter-gibbs/lite-idp/model"
 )
 
 func (i *IDP) sendPostResponse(authRequest *model.AuthnRequest, user *model.User,

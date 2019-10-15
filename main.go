@@ -19,9 +19,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/amdonov/lite-idp/idp"
+	"github.com/peter-gibbs/lite-idp/idp"
 
-	"github.com/amdonov/lite-idp/cmd"
+	"github.com/peter-gibbs/lite-idp/cmd"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

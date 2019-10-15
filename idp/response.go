@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/amdonov/lite-idp/model"
-	"github.com/amdonov/lite-idp/saml"
+	"github.com/peter-gibbs/lite-idp/model"
+	"github.com/peter-gibbs/lite-idp/saml"
 	"github.com/golang/protobuf/proto"
 	"github.com/google/uuid"
 )

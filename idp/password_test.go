@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/amdonov/lite-idp/model"
+	"github.com/peter-gibbs/lite-idp/model"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 )

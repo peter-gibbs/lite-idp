@@ -20,7 +20,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/amdonov/lite-idp/model"
+	"github.com/peter-gibbs/lite-idp/model"
 	"github.com/golang/protobuf/proto"
 	"github.com/spf13/viper"
 	"golang.org/x/crypto/bcrypt"

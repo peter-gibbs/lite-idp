@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/amdonov/lite-idp/idp"
-	"github.com/amdonov/lite-idp/saml"
-	"github.com/amdonov/lite-idp/store"
+	"github.com/peter-gibbs/lite-idp/idp"
+	"github.com/peter-gibbs/lite-idp/saml"
+	"github.com/peter-gibbs/lite-idp/store"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

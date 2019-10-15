@@ -17,7 +17,7 @@ package redis
 import (
 	"time"
 
-	"github.com/amdonov/lite-idp/store"
+	"github.com/peter-gibbs/lite-idp/store"
 	"github.com/go-redis/redis"
 	"github.com/spf13/viper"
 )

@@ -1,7 +1,7 @@
 package idp
 
 import (
-	"github.com/amdonov/lite-idp/model"
+	"github.com/peter-gibbs/lite-idp/model"
 )
 
 // LoginType type of credential used for authentication

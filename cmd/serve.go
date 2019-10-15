@@ -20,7 +20,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/amdonov/lite-idp/idp"
+	"github.com/peter-gibbs/lite-idp/idp"
 	"github.com/gorilla/handlers"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"

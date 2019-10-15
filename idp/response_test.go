@@ -18,7 +18,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/amdonov/lite-idp/model"
+	"github.com/peter-gibbs/lite-idp/model"
 )
 
 func TestIDP_respond(t *testing.T) {

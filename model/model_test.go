@@ -20,7 +20,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/amdonov/lite-idp/saml"
+	"github.com/peter-gibbs/lite-idp/saml"
 	"github.com/stretchr/testify/assert"
 )
 

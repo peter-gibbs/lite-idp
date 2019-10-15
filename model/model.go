@@ -22,7 +22,7 @@
 package model
 
 import (
-	"github.com/amdonov/lite-idp/saml"
+	"github.com/peter-gibbs/lite-idp/saml"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/spf13/viper"
 )

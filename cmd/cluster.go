@@ -15,8 +15,8 @@
 package cmd
 
 import (
-	"github.com/amdonov/lite-idp/idp"
-	"github.com/amdonov/lite-idp/store/redis"
+	"github.com/peter-gibbs/lite-idp/idp"
+	"github.com/peter-gibbs/lite-idp/store/redis"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
