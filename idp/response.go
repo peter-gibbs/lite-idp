@@ -64,11 +64,16 @@ func (i *IDP) makeAuthnResponse(request *model.AuthnRequest, user *model.User) *
 	fiveFromNow := now.Add(5 * time.Minute)
 	resp := i.makeResponse(request.ID, request.Issuer, user)
 	// Add subject confirmation data and authentication statement
+	// peter.gibbs DNSName must not include a port number (pysaml2)
+	dnsName = i.serverName
+	if i := strings.Index(dnsName, ":"); i != -1 {
+		dnsName = dnsName[:i]
+	}
 	resp.Assertion.AuthnStatement = &saml.AuthnStatement{
 		AuthnInstant: now,
 		SessionIndex: saml.NewID(),
 		SubjectLocality: &saml.SubjectLocality{
-			DNSName: i.serverName,
+			DNSName: dnsName,
 		},
 		AuthnContext: &saml.AuthnContext{
 			AuthnContextClassRef: user.Context,
