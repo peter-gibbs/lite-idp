@@ -1,4 +1,4 @@
-module github.com/amdonov/lite-idp
+module github.com/peter-gibbs/lite-idp
 
 require (
 	github.com/PuerkitoBio/goquery v1.4.1
