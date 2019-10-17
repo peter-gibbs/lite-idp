@@ -39,6 +39,7 @@ require (
 	golang.org/x/text v0.3.2 // indirect
 	gopkg.in/fsnotify.v1 v1.4.7 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
+	gopkg.in/yaml.v2 v2.2.2
 )
 
 go 1.13
