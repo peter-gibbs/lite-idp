@@ -3,6 +3,7 @@ package cmd
 
 import (
 	"io/ioutil"
+	"strings"
 
 	"github.com/spf13/viper"
 	"github.com/spf13/cobra"
@@ -31,6 +32,15 @@ var userCmd = &cobra.Command{
 		err = yaml.Unmarshal(userData, &newUser)
 		if err != nil {
 			return err
+		}
+		// Hash the password if it is not already in bcrypt format
+		pwd := newUser.Password
+		if len(pwd) > 0 && !strings.HasPrefix(pwd, `$2a`) {
+			pwd, err = hashPassword([]byte(pwd))
+			if err != nil {
+				return err
+			}
+			newUser.Password = pwd
 		}
 		// Get the existing users
 		users := []UserAttributes{}
